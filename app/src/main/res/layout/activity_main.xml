@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <GridView
+        android:id="@+id/gridview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/id_user_recordLibRB"
+        android:layout_below="@+id/id_user_recordHead"
+        android:horizontalSpacing="5dp"
+        android:numColumns="4"
+        android:verticalSpacing="4dp" />
+
+    <ImageView
+        android:id="@+id/background2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@mipmap/filenull"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/id_user_recordiv"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_above="@+id/id_user_recordLibRB"
+        android:background="#acacac" />
+
+    <RelativeLayout
+        android:id="@+id/id_user_recordLibRB"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#fcf">
+
+        <ImageView
+            android:id="@+id/id_user_photoLib_upload"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="120dp"
+            android:layout_marginStart="120dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/upload" />
+
+        <ImageView
+            android:id="@+id/id_user_photoLib_del"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="120dp"
+            android:layout_marginRight="120dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/del1" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/id_user_recordHead"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:id="@+id/id_user_recordLibTv"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#00B4FF"
+            android:gravity="center"
+            android:text="照片库"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/id_user_recordLibBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:paddingLeft="10dp"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/id_user_photoLibSel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/id_user_recordLibTv"
+            android:layout_alignBottom="@+id/id_user_recordLibTv"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:paddingRight="10dp"
+            android:text="选择"
+            android:textColor="@color/colorWhite"
+            android:textSize="18dp" />
+    </RelativeLayout>
+</RelativeLayout>
